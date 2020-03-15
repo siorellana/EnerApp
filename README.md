@@ -1,6 +1,7 @@
 # EnergonApp
 
 [![CircleCI](https://circleci.com/gh/siorellana/EnerApp/tree/master.svg?style=shield&circle-token=346e45a3e9648741dce5eff682d77cebd3ac2ae0)](https://circleci.com/gh/siorellana/EnerApp/tree/master)
+[![Known Vulnerabilities](https://snyk.io/test/github/siorellana/EnerApp/badge.svg)](https://snyk.io/test/github/siorellana/EnerApp)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
 Also node version 10.18.0 is fully compatible with this project.
