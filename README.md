@@ -1,4 +1,5 @@
-# EnergonApp
+<!-- markdownlint-disable-file MD033 -->
+# EnergonApp <img align="right" src="https://github.com/siorellana/EnerApp/blob/master/src/favicon.png">
 
 [![CircleCI](https://circleci.com/gh/siorellana/EnerApp/tree/master.svg?style=shield&circle-token=346e45a3e9648741dce5eff682d77cebd3ac2ae0)](https://circleci.com/gh/siorellana/EnerApp/tree/master)
 [![Known Vulnerabilities](https://snyk.io/test/github/siorellana/EnerApp/badge.svg)](https://snyk.io/test/github/siorellana/EnerApp)
