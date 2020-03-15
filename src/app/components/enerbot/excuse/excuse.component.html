@@ -1,0 +1,62 @@
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<app-navbar></app-navbar>
+<div class="container">
+    <app-new-excuse></app-new-excuse>
+</div>
+
+<div>
+    <br>
+</div>
+<div *ngIf="excuses.length > 0; else noNew">
+    <ul *ngFor="let excuse of excuses" class="collection">
+        <li class="collection-item">
+            <a class="secondary-content">
+                <i *ngIf="editState == false" (click)="edit($event, excuse)" class="material-icons">mode_edit</i>
+                <i *ngIf="editState && toEdit.id == excuse.id" (click)="clearState()" class="material-icons">close</i>
+            </a>
+            <blockquote style="font-size: 1rem">{{excuse.texto}}</blockquote>
+            <br>
+            <span class="my_tag green lighten-5">
+                <strong>Type:</strong> {{excuse.tipo}}
+            </span>
+            <span class="my_tag orange lighten-5">
+                <strong>Created by:</strong> {{excuse.creador}}
+            </span>
+            <span style="font-size: 0.8rem" class="my_tag right">
+                <strong>Publicado el:</strong> {{excuse.ts | date: 'yyyy/MM/dd h:mm:ss a'}}
+            </span>
+            <hr>
+            <div *ngIf="editState && toEdit.id == excuse.id"  class="container-updateNotificacion">
+                    <form (ngSubmit)="update(excuse)" #formNew="ngForm" class="col s12">
+                            <div class="row">
+                              <div class="input-field col s6">
+                                  <textarea class="materialize-textarea" [(ngModel)]="excuse.texto" #texto="ngModel" type="text" name="texto" id="texto" placeholder="" minlength="8" maxlength="999" required></textarea>
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="input-field col s6">
+                                  <input [(ngModel)]="excuse.tipo" #tipo="ngModel" type="text" name="tipo" id="tipo" placeholder="" minlength="5" maxlength="40" required>
+                              </div>
+                            </div>
+
+                            <button (click)="delete($event, excuse)" class="btn waves-effect waves-light red">
+                              <span style="color:#fff">Eliminar<i class="material-icons right">delete_forever</i></span>
+                            </button>
+                            <button type="submit" class="btn waves-effect waves-light green right">
+                              <span style="color:#fff">Actualizar<i class="material-icons right">save</i></span>
+                            </button>
+
+                    </form>
+            </div>
+
+        </li>
+    </ul>
+</div>
+<ng-template #noNew>
+    <hr>
+    <h5>NO HAY ANUNCIOS</h5>
+    <h5>Es probable que debas refrescar esta página.</h5>
+</ng-template>

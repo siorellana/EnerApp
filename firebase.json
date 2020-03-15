@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/EnergonApp",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

@@ -1,0 +1,170 @@
+/*!
+ * Theme Name: ICOCrypto
+ * Author: Softnio
+ * Version: 1.5.0
+ * Updated: 02.09.2019
+ * RTL Support
+**/
+.banner-screen { left: auto; right: 50%; transform: translateX(50%); }
+
+.menu-item a .badge { margin-left: 0; margin-right: 5px; }
+
+.has-sub > a:after { right: auto; left: 0; }
+
+.link-icon { margin-right: 0; margin-left: 5px; }
+
+.feature-icon { margin-right: 0; margin-left: 20px; }
+
+.bonus-info:not(:last-child) { border-right: none; border-left: 1px solid rgba(22, 163, 254, 0.2); }
+
+.progress-point { transform: translateX(50%); }
+.progress-point-1 { left: auto; right: 25%; }
+.progress-point-2 { left: auto; right: 85%; }
+
+.chart-c { margin-right: 0; margin-left: 12px; }
+.chart-p { margin-left: 0; margin-right: auto; }
+
+.split { border-radius: 6px; }
+.split-left { border-radius: 6px 6px 0 0; }
+.split-right { border-radius: 0 0 6px 6px; }
+
+.list-check li { padding-left: 0; padding-right: 24px; }
+.list-check li:before { left: auto; right: 0; }
+.list-dot li { padding-left: 0; padding-right: 16px; }
+.list-dot li:before { left: auto; right: 0; }
+
+.roadmap-line { left: auto; right: 19px; }
+.roadmap-line:after, .roadmap-line:before { left: auto; right: -4px; }
+.roadmap-year { left: auto; right: -5px; }
+.roadmap-step { margin-left: 0; margin-right: 50px; }
+.roadmap-step:before { left: auto; right: -41px; }
+.roadmap-step:after { left: auto; right: -22px; }
+.roadmap-head { padding-right: 0; padding-left: 35px; }
+.roadmap-finished .roadmap-head:after { right: auto; left: 0; }
+
+.team-photo .team-social { right: auto; left: 17px; }
+
+.team-featured-info { left: auto; right: 0; }
+
+.tab-nav li a .fas, .tab-nav li a .far { margin-right: 0; margin-left: 10px; }
+
+.accordion-title { padding: 22px 0 14px 46px; }
+.accordion-item-s2 .accordion-title, .accordion-item-s3 .accordion-title { padding: 25px 30px 17px 46px; }
+.accordion-item-s4 .accordion-title { padding: 16px 30px 8px 46px; }
+.accordion-icon { right: auto; left: 0; }
+.accordion-item-s2 .accordion-icon { right: auto; left: 12px; }
+.accordion-item-s3 .accordion-icon { right: auto; left: 18px; }
+.accordion-item-s4 .accordion-icon { right: auto; left: 12px; }
+.accordion-content { padding-right: 0; padding-left: 46px; }
+.accordion-item-s2 .accordion-content, .accordion-item-s3 .accordion-content, .accordion-item-s4 .accordion-content { padding-left: 0; padding-right: 30px; }
+
+.contact-icon { margin-right: 0; margin-left: 15px; }
+
+.breadcumb li:not(:last-child):after { right: auto; left: -3px; }
+
+.toggle-drop-left { right: 0; left: auto; }
+.toggle-drop-right { left: 0; right: auto; }
+
+.nk-ovm { transform: scaleX(-1); }
+
+.field-inline input { border-radius: 0 6px 6px 0; border-right: 1px solid #dbe4f7; border-left: none; }
+.field-inline .btn { border-radius: 5px 0 0 5px; }
+.field-inline-s2 .btn { border-radius: 6px; }
+.field-inline-s2 input { border-right: none; }
+
+.alert-dismissible { padding-right: 1.25rem; padding-left: 4rem; }
+.alert .close { right: auto; left: 10px; }
+
+.btn span + .icon { margin-left: 0; margin-right: 10px; }
+.btn .icon + span { margin-left: 0; margin-right: 10px; }
+.btn .badge { right: auto; left: 0; transform: translate(-50%, -50%); }
+
+.modal-close, .mfp-close-btn-in .mfp-close { right: auto; left: -15px; }
+
+.image-popup .mfp-close { right: auto; left: -18px; }
+
+input ~ .error, textarea ~ .error, select ~ .error { right: auto; left: -10px; }
+input ~ .error:after, textarea ~ .error:after, select ~ .error:after { left: auto; right: 3px; border-right: 5px solid transparent; border-left: 5px solid #e6604a; }
+
+.field-label-line { transform-origin: right; }
+
+.input-switch ~ label:not(.error) { padding-left: 0; padding-right: 48px; }
+.input-switch ~ label:not(.error).no-text { padding-left: 0; padding-right: 56px; }
+.input-switch ~ label:not(.error):before { left: auto; right: 0; }
+.input-switch ~ label:not(.error):after { left: auto; right: 2px; }
+.input-switch ~ label:not(.error) span.over { left: auto; right: 48px; }
+.input-switch:checked ~ label:after { left: auto; right: 22px; }
+.input-switch ~ .error { left: auto; right: -4px; }
+.input-checkbox ~ label:not(.error), .input-radio ~ label:not(.error) { padding-left: 0; padding-right: 28px; }
+.input-checkbox ~ label:not(.error):before, .input-checkbox ~ label:not(.error):after, .input-radio ~ label:not(.error):before, .input-radio ~ label:not(.error):after { left: auto; right: 0; }
+.input-checkbox ~ .error, .input-radio ~ .error { left: auto; right: -4px; }
+
+.select2-container.select-bordered .select2-selection { padding: 10px 0 10px 40px; }
+
+.select2-container.select-line .select2-selection { padding: 16px 0 8px 40px; }
+
+.select2-container .select2-selection .select2-selection__arrow { right: auto; left: 0; }
+
+.toast { padding: 15px 15px 15px 51px; }
+.toast-close-button { text-align: right; right: auto; left: 15px; }
+.toast-close-button:after { right: auto; left: -1px; }
+.toast-message { padding-left: 0; padding-right: 10px; }
+.toast-message-icon { margin-left: 15px; margin-right: -10px; }
+
+.countdown-s3 .countdown-time:after { right: auto; left: -6px; transform: translate(-50%, -50%); }
+
+.pagination li:last-child a { border-radius: 6px 0 0 6px; }
+.pagination li:first-child a { border-radius: 0 6px 6px 0; }
+
+.blog-meta li:not(:last-child):after { right: auto; left: -3px; }
+
+.wgs-links-category li { padding-left: 0; padding-right: 20px; }
+.wgs-links-category li:before { left: auto; right: 0; }
+
+.comment-photo { margin-right: 0; margin-left: 20px; }
+
+@media (min-width: 420px) { .bonus-badge { right: auto; left: 0; transform: translateY(-50%) rotate(-90deg); } }
+@media (min-width: 576px) { .split-sm { border-radius: 6px; }
+  .split-sm-right { border-radius: 6px 0 0 6px; }
+  .split-sm-left { border-radius: 0 6px 6px 0; } }
+@media (min-width: 768px) { .split-md { border-radius: 6px; }
+  .split-md-right { border-radius: 6px 0 0 6px; }
+  .split-md-left { border-radius: 0 6px 6px 0; } }
+@media (min-width: 992px) { .menu-sub { left: auto; right: 0; }
+  .menu-mega { left: 50%; right: auto; }
+  .has-sub > a { padding-right: 8px !important; padding-left: 24px !important; }
+  .has-sub > a:after { right: auto; left: 8px; }
+  .has-sub.menu-item:last-child .menu-sub:not(.menu-mega) .menu-item > a { padding-right: 35px !important; padding-left: 20px !important; }
+  .has-sub.menu-item:last-child .menu-sub:not(.menu-mega) .menu-item > a:after { right: 15px; left: auto; }
+  .has-sub.menu-item:last-child .menu-mega { left: 0; right: auto; text-align: right; }
+  .menu-sub .has-sub > a { padding-right: 20px; padding-left: 35px; }
+  .menu-sub .has-sub > a:after { right: auto; left: 15px; }
+  .header-navbar { padding: 0; }
+  .split-lg { border-radius: 6px; }
+  .split-lg-right { border-radius: 6px 0 0 6px; }
+  .split-lg-left { border-radius: 0 6px 6px 0; }
+  .menu-btns { margin-left: -10px; margin-right: 10px; }
+  .nk-block-img.edge-r1 { margin-right: 0; margin-left: -160px; }
+  .nk-block-img.edge-l1 { margin-left: 0; margin-right: -160px; }
+  .nk-block-img.edge-r2 { margin-right: 0; margin-left: -360px; }
+  .nk-block-img.edge-l2 { margin-left: 0; margin-right: -360px; }
+  .nk-block-img.edge-r3 { margin-right: 0; margin-left: -500px; }
+  .nk-block-img.edge-l3 { margin-left: 0; margin-right: -500px; }
+  .roadmap-line { left: auto; right: 50%; margin-left: 0; margin-right: -1px; }
+  .roadmap-left .roadmap-step { margin-right: 0; margin-left: 80px; }
+  .roadmap-left .roadmap-step:before { right: auto; left: -96px; }
+  .roadmap-left .roadmap-step:after { right: auto; left: -78px; }
+  .roadmap-right .roadmap-step { margin-right: 80px; margin-left: 0; }
+  .roadmap-step:before { left: auto; right: -96px; }
+  .roadmap-step:after { left: auto; right: -78px; }
+  .team-featured-cont { padding-left: 0; padding-right: 20px; } }
+@media (min-width: 1200px) { .menu-item.has-sub > a { padding-right: 18px !important; padding-left: 34px !important; }
+  .menu-item.has-sub > a:after { left: 18px; right: auto; }
+  .split-xl { border-radius: 6px; }
+  .split-xl-right { border-radius: 6px 0 0 6px; }
+  .split-xl-left { border-radius: 0 6px 6px 0; }
+  .roadmap-left .roadmap-step:before { right: auto; left: -91px; }
+  .roadmap-left .roadmap-step:after { right: auto; left: -73px; }
+  .roadmap-step:before { left: auto; right: -91px; }
+  .roadmap-step:after { left: auto; right: -73px; } }
+/* END @iO */

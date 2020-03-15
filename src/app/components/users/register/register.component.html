@@ -1,0 +1,65 @@
+<section id="register" class="mb-5 mt-5">
+    <div class="container">
+      <div class="row">
+  
+        <div class="col-xs-12 col-sm-6 col-md-4 mx-auto">
+          <div class="card_register">
+            <div class="card">
+              <div class="card-body text-center">
+                <form #formRegister="ngForm" (ngSubmit)="onAddUser()">
+                  <h1 class="h3 mb-3 font-weight-normal">Register</h1>
+                  <div class="alert alert-danger" role="alert" *ngIf="isError">
+                    {{msgError}}
+                  </div>
+                  
+                  <div class="form-group">
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Email" [(ngModel)]="email" required
+                      minlength="8">
+                  </div>
+                  <!--<div class="alert alert-danger" role="alert">
+                    <div *ngIf="email.errors.required">Email is required</div>
+                    <div *ngIf="email.errors.minlength">Email must be at least 8 characters</div>
+                  </div>-->
+
+                  <div class="form-group">
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Password" [(ngModel)]="pass"
+                      required minlength="5" maxlength="10">
+                  </div>
+                  <!--<div class="alert alert-danger" role="alert">
+                    <div *ngIf="password.errors.required">Password is required</div>
+                    <div *ngIf="password.errors.minlength">Password must be at least 5 characters</div>
+                  </div>-->
+                  <hr>
+
+                  <div class="form-group">
+                    <h5>Select your avatar:</h5>
+                    <input type="file" accept=".png, .jpg" (change)="onUpload($event)">
+                  </div>
+
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" [style.width]="(uploadPercent | async) + '%'">
+                    </div>
+                  </div>
+                  
+                  <br>
+
+                  <input #imageUser type="hidden" [value]="urlImage | async">
+                  
+                  <button *ngIf="urlImage | async; else btnDisabled" type="submit" class="btn btn-lg btn-block" style="background-color: #e83e8c; color: #fff">Register</button>
+                  
+                  <ng-template #btnDisabled>
+                      <button type="submit" disabled=true class="btn btn-lg btn-secondary btn-block" >Register</button>
+                  </ng-template>
+
+                  <div class="form-group">
+                    <a routerLink="/user/login" class="form-control login-user">Do you have account?</a>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

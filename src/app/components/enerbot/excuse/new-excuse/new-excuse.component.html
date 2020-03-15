@@ -1,0 +1,34 @@
+<div class="card">
+    <div class="card-content">
+    <span class="card-tittle" style="font-size: 2rem">ADD EXCUSE</span>
+      <div class="row">
+      <form (ngSubmit)="onGuardar(formNew)" #formNew="ngForm" class="col s12">
+
+        <div class="row">
+          <div class="input-field col s6">
+            <textarea class="materialize-textarea" [(ngModel)]="book.texto" #texto="ngModel" type="text" name="texto" id="texto" placeholder="" minlength="8" maxlength="999" required></textarea>
+            <label>EXCUSE</label>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col s6">
+              <input [(ngModel)]="book.tipo" #tipo="ngModel" type="text" name="tipo" id="tipo" placeholder="" minlength="5" maxlength="40" required placeholder="{{book.tipo}}">
+              <label for="tipo">TYPE</label>
+              </div>
+            </div>
+          <div class="input-field col s12">
+            <input [(ngModel)]="book.creador" #creador="ngModel" type="text" name="creador" id="creador" placeholder="" minlength="2" maxlength="40" readonly placeholder="{{user.email}}">
+            <label for="creador"></label>
+          </div>
+
+        <button type="submit" class="btn waves-effect waves-light green right">
+          <span style="color:#fff">Create Excuse</span>
+        </button>
+
+      </form>
+    </div>
+
+    </div>
+
+  </div>
