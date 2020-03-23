@@ -10,8 +10,12 @@
           </a>
         </div>
 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
         <!-- Menu @s -->
-        <div class="header-navbar animated fadeInDown" data-animate="fadeInDown" data-delay=".75" style="visibility: visible; animation-delay: 0.75s;">
+        <div class="collapse navbar-collapse" id="mainNavbar" data-animate="fadeInDown" data-delay=".75" style="visibility: visible; animation-delay: 0.75s;">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown" *ngIf="isLogged">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -38,20 +42,18 @@
             </li>
             <li class="nav-item" *ngIf="!isLogged">
               <a routerLink="/user/login" class="btn btn-md btn-auto btn-grad"><span>Login</span></a>
-    <!--           <a class="nav-link" routerLink="/user/login">Login
-              </a> -->
             </li>
     
             <li class="nav-item" *ngIf="isLogged">
               <a href="#" class="nav-link" (click)="onLogout()">Logout
               </a>
             </li>
-    
-            <!--CONNECTED: {{isLogged}}-->
           </ul>
 
-        <div class="header-navbar-overlay"></div></div><!-- .header-navbar @e -->
-      </div>                                                
+          <div class="header-navbar-overlay">
+          </div>
+          </div><!-- .header-navbar @e -->
+        </div>                                                
+      </div>
     </div>
-  </div>
   </nav>
