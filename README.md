@@ -3,7 +3,7 @@
 
 [![CircleCI](https://circleci.com/gh/siorellana/EnerApp/tree/master.svg?style=shield&circle-token=346e45a3e9648741dce5eff682d77cebd3ac2ae0)](https://circleci.com/gh/siorellana/EnerApp/tree/master)
 [![Known Vulnerabilities](https://snyk.io/test/github/siorellana/EnerApp/badge.svg)](https://snyk.io/test/github/siorellana/EnerApp)
-![This software is Blessed](https://img.shields.io/badge/blessed-100%25-770493.svg) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/2487fbd65bf14d5b84973fb2a22c7035)]
+![This software is Blessed](https://img.shields.io/badge/blessed-100%25-770493.svg)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
 Also node version 10.18.0 is fully compatible with this project.
